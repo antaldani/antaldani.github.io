@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title> 
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>       
+                <li><a href="index.html">kezdőlap</a></li>
+                <li><a href="2.oldal.html">Népszerű hasznaltautók</a></li>
+                <li><a href="3.oldal.html">Videó</a></li>
+                <li><a id="current" href="4.oldal.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        <h1>Kapcsolat</h1>   
+    </header>
+    
+    <figure>
+        <section aria-label="newest Photos">
+            <div class="carousel" data-carousel>
+                <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="kepek/3.jpg" alt="Ferrari">
+                    </li>
+                    <li class="slide">
+                        <img src="kepek/4.jpg" alt="Porsche">
+                    </li>
+                    <li class="slide">
+                        <img src="kepek/5.jpg" alt="Volkswagen">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </figure>
+
+    <form action="">
+        <p>Add meg a neved:</p>
+        <input type="text" maxlength="50" value="Gipsz Jakab">
+        <p>Tud-e autót vezetni?</p>
+        <input type="checkbox" id="igen1" name="igen1" value="igen">
+        <label for="igen1"> igen</label><br>
+        <p>Milyen közlekedési eszközt használ?</p>
+        <input type="radio" name="kocsi" value="gépkocsi">
+        <label for="html">gépkocsi</label><br>
+        <input type="radio" name="kocsi" value="kerékpár/motorkerékpár">
+        <label for="css">kerékpár/motorkerékpár</label><br>
+        <input type="radio" name="kocsi" value="tömegözlekedés">
+        <label for="javascript">tömegözlekedés</label>
+        <p>Megjegyzések:</p>
+        <textarea name="megjegyzes" rows="10" cols="50" maxlength="1000">
+
+        </textarea>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
+
+   
+
+    <footer>
+        <div>
+            <p>Gipsz Jakab honlapja</p>
+            <p>Források:</p>
+        </div>
+    </footer>
+</body>
+</html>
